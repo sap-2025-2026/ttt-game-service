@@ -4,7 +4,7 @@
 
 v1.0.0-20251015
 
-- [Rough problem description](./doc/ttt-desc.md)
+- [Problem description (minimal)](./doc/ttt-desc.md)
 
   
 
