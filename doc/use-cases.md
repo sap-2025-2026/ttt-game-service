@@ -67,7 +67,6 @@
 #### End Game (System / Registered Player)
 
 - **Goal**: Conclude a match as Win/Loss/Draw or via Forfeit.
-
 - **Triggers**: Win/Draw from Check Win/Draw, or Forfeit/Leave Game by a player.
 - **Post**: Game status “finished”; result recorded; players can Rematch or Exit.
 
