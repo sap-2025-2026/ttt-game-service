@@ -1,5 +1,5 @@
 package ddd;
 
-public interface DomainEvent {
+public interface DomainEvent extends ValueObject  {
 
 }
