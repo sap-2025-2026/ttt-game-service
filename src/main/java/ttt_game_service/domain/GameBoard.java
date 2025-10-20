@@ -2,18 +2,22 @@ package ttt_game_service.domain;
 
 import java.util.Optional;
 
+import ddd.Entity;
+
 /**
  * 
  * The game board of a game.
  * 
  */
-public class GameBoard {
+public class GameBoard implements Entity<String>{
 
 	public enum BoardCellContentType { CROSS, CIRCLE, EMPTY};
 	private BoardCellContentType[][] board;
 	private int numFreeCellsLeft;
+	private String id;
 	
-	public GameBoard() {
+	public GameBoard(String id) {
+		this.id = id;
 		board = new BoardCellContentType[3][3];
 		for (int y = 0; y < 3; y++) {
 			for (int x = 0; x < 3; x++) {
@@ -83,6 +87,11 @@ public class GameBoard {
 	 */
 	public boolean isTie() {
 		return numFreeCellsLeft == 0; /* could be improved */
+	}
+
+	@Override
+	public String getId() {
+		return id;
 	}
 }
 

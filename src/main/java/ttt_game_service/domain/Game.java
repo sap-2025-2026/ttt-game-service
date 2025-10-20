@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import ddd.Aggregate;
 import ddd.Entity;
 
 
@@ -13,7 +15,7 @@ import ddd.Entity;
  * A class representing a running game
  * 
  */
-public class Game implements Entity<String>{
+public class Game implements Aggregate<String>{
 	static Logger logger = Logger.getLogger("[Game]");
 
 	private String id;
@@ -31,7 +33,7 @@ public class Game implements Entity<String>{
 	
 	public Game(String id) {
 		this.id = id;
-		board = new GameBoard();
+		board = new GameBoard(id+"-board");
 
 		playerCross = Optional.empty();
 		playerCircle = Optional.empty();
