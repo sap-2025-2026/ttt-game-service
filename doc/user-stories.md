@@ -1,12 +1,13 @@
 #### Software Architecture and Platforms - a.y. 2025-2026
 
-## TTT Game Service Case Study - User Stories (examples)
+## TTT Game Service Case Study - User Stories (some examples)
 
+v.0.9.0-20251024
 
 ###  Registration and Access
 
 	As a new user, 
-	I want to register an account 
+	I want to register an account on the game service 
 	so that I can play Tic-Tac-Toe online.
 
 
@@ -26,7 +27,7 @@
 
 	As a player, 
 	I want to join an existing game 
-	so that I can play against another user.
+	so that I can play against another logged-in user.
 
 ### Gameplay
 
@@ -56,19 +57,18 @@
 	I want to see my past games and results 
 	so that I can review my performance.
 
-## Social and Quality-of-Life Features
-
-	As a player, 
-	I want to chat with my opponent during the game 
-	so that I can make the match more social.
-
-	As a user, 
-	I want to be automatically matched with another available player 
-	so that I don’t have to wait or search manually.
+## Quality Features
 
 	As a user, 
 	I want to play from any modern web browser 
 	so that I can use the system without installing anything.
 
+ 	As a player,
+	I want to see no latency when making moves
+    so that the playing experience is fluid
+
+ 	As a player,
+	I want to be able to continue playing game even when if a browser accindentally is closed or the system shutdown 
+    so that I can finish the game.
 
 
