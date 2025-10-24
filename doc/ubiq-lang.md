@@ -30,7 +30,7 @@ v.0.9.0-20251024
   - A logged user that joined a game is referred as player
 - **To make a move**
   - A player plays by selecting moves to do on the board, following the TTT rules
-  - Moves made by a player are made immediately visible to the adversary player
+  - Moves made by a player are made immediately visible to the opponent player
  
 
 
